@@ -1,0 +1,4 @@
+{
+	"name":"node-combo",
+	"main":"./lib/combo.js"
+}
