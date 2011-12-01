@@ -1,6 +1,7 @@
 {
 	"name":"node-combo",
   "author":"xiao jue",
+  "version":"1.0.1",
   "description":"Static server for node and expand some node features",
 	"main":"./lib/server.js",
   "keywords":[
