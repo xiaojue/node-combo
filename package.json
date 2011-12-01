@@ -1,4 +1,23 @@
 {
 	"name":"node-combo",
-	"main":"./lib/combo.js"
+  "author":"xiao jue",
+  "description":"Static server for node and expand some node features",
+	"main":"./lib/server.js",
+  "keywords":[
+    "combo",
+    "static server",
+    "fd server"
+    ],
+    "directories":{
+      "lib":"./lib"
+    },
+    "maintainers":[{
+      "name":"xiao jue",
+      "email":"designsor@gmail.com",
+      "web":"http://www.designsor.com"
+    }],
+  "repository":{
+    "type":"git",
+    "url":"git@github.com:xiaojue/node-combo.git"
+  }
 }
