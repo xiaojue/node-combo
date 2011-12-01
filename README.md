@@ -4,7 +4,18 @@
 其次，node-combo v1.0.1 完成对js和css文件的combo请求处理，用以减少http请求数量。
   
 ## API
-
+  
+### 引入
+把文件下到module目录，然后修改`./lib/config.js`里的配置端口，在apache或者nginx下配置好端口和映射，配置好静态文件目录。
+  
+在你的sever启动里增加如下代码：
+  
+``` js
+var combo=require('node-combo');
+combo.run();
+``` 
+### Combo格式
+  
 使用正常的请求就直接输入相应匹配到的url就好了，如果请求combo文件，格式如下:
   
 ``` html
