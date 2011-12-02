@@ -17,6 +17,9 @@
       "email":"designsor@gmail.com",
       "web":"http://www.designsor.com"
     }],
+    "dependencies":{
+        "node-canvas":""
+    },
   "repository":{
     "type":"git",
     "url":"git@github.com:xiaojue/node-combo.git"
