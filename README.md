@@ -1,7 +1,7 @@
 #Node Combo
 `node-combo` 首先是一个静态的资源服务器，可以用来处理客户端对静态资源如图片，js，css等得相应请求，并返回结果，处理相应的请求头，并对资源进行缓存一类的基本功能，全部用node实现。
   
-其次，node-combo v1.0.1 完成对js和css文件的combo请求处理，用以减少http请求数量。
+其次，node-combo v0.0.1 完成对js和css文件的combo请求处理，用以减少http请求数量。
   
 ## API
   
