@@ -24,16 +24,28 @@ combo.run();
 <script src="http://example.com/directory/??1.js,/root.js,3.js?t=1234567.js"></script>
 ```
   
+``` html
+<link href="http://example.com/css/?1.css,2.css,3.css" rel="stylesheet" type="text/css">
+<link href="http://example.com/css/?1.css,/root.css,3.css?t=1234567.css" rel="stylesheet" type="text/css">
+```
+  
+### 图片Combo格式
+
+可以合并不同类型的图片，生成一张宽度为最大一张宽度，高度三张想加的PNG图片，适合做css的雪碧图用,格式如下:
+  
+``` html
+<img src="http://example.com/image/??1.jpg,2.jpg" />
+<img src="http://example.com/image/??1.jpg,2.png,3.gif/>"
+```
+  
 ## TODO
   
-1.  处理针对图片的需求，比如合并多图的请求。
+1. <del>处理针对图片的需求，比如合并多图的请求。</del>
   
-2.  增加css雪碧图的自动处理与图片合并。
-    
-3.  增加一些简单的标签机制，在css和js文件中进行预处理。
+2.  增加一些简单的标签机制，在css和js文件中进行预处理。
   
-4.  增加对lesscss的自动解析与处理。
+3.  增加对lesscss的自动解析与处理。
   
-5.  计划增加对coffeejs的自动解析与处理。
+4.  计划增加对coffeejs的自动解析与处理。
   
-6.  绘制资源目录的关系图，代码统计之类的功能。
+5.  绘制资源目录的关系图，代码统计之类的功能。
