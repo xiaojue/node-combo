@@ -38,11 +38,20 @@ combo.run();
 <img src="http://example.com/image/??1.jpg,2.png,3.gif" />
 ```
   
+### 图片自定义尺寸格式
+  
+如果图片resize尺寸超过原始尺寸，返回原始尺寸图片
+
+``` html
+<img src="http://example.com/image/1.jpg_50x50.jpg" />
+<img src="http://example.com/image/1.jpg_30x30.jpg" />
+```
+  
 ## TODO
   
 1. <del>处理针对图片的需求，比如合并多图的请求，完成css雪碧图等。</del>
   
-2.  图片大小格式智能控制。
+2. <del>图片大小控制。</del>
   
 3.  增加一些简单的标签机制，在css和js文件中进行预处理。
   
