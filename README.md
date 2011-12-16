@@ -40,13 +40,66 @@ combo.run();
 <img src="http://example.com/image/1.jpg_30x30.jpg" />
 ```
   
+### static template
+  
+test.css 可以引入多个js文件，比如nodeImport(./json1.js,./json2.js)
+  
+``` css
+//nodeImport(./json.js)  
+/**  
+ * @author {#name#} {#email#}  
+ * @version {#version#}  
+ * @description test for {#common#}  
+ */  
+ body{
+     font-size:{#fontSize#};
+ }
+```
+  
+json.js 引入的文件
+  
+``` javascript
+{
+    "name":"xiaojue",
+    "email":"designsor@gmail.com"
+    "version":function(){
+        return new Date().valueOf();
+    }()
+}
+```
+  
+NodeCommon.js 可以配置的当前目录通用模板文件
+  
+``` javascript
+{
+    "common":"node combo static template",
+    "fontSize":"12px"
+}
+```
+
+Putout:
+
+``` css
+//nodeImport(./json.js)
+/**
+ * @author xiaojue designsor@gmail.com
+ * @version 1324005628274
+ * @description test for node combo static template
+ */
+ body{
+     font-size:12px;
+ }
+```
+  
+javascript的处理方法和css一样，使用`{##}`占位符。
+  
 ## TODO
   
 1. <del>处理针对图片的需求，比如合并多图的请求，完成css雪碧图等。[20111201]</del>
   
 2. <del>图片大小控制。[20111201]</del>
   
-3.  增加一些简单的标签机制，在css和js文件中进行预处理。[20111201]
+3. <del>增加一些简单的标签机制，在css和js文件中进行预处理。[20111201]</del>
   
 4.  增加对lesscss的自动解析与处理。[20111201]
   
