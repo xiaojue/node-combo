@@ -18,7 +18,8 @@
       "web":"http://www.designsor.com"
     }],
     "dependencies":{
-        "node-canvas":""
+        "node-canvas":"",
+        "less":""
     },
   "repository":{
     "type":"git",
