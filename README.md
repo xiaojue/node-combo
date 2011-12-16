@@ -77,7 +77,7 @@ NodeCommon.js 可以配置的当前目录通用模板文件
 }
 ```
 
-Putout:
+output:
 
 ``` css
 //nodeImport(./json.js)
