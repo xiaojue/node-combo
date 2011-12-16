@@ -40,7 +40,7 @@ combo.run();
 <img src="http://example.com/image/1.jpg_30x30.jpg" />
 ```
   
-### static template
+### Static Template
   
 test.css 可以引入多个js文件，比如nodeImport(./json1.js,./json2.js)
   
